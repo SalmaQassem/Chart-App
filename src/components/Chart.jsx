@@ -1,3 +1,4 @@
+import { memo } from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -33,7 +34,6 @@ const Chart = ({ filterIndex }) => {
         grid: {
           display: false,
         },
-        display: false,
       },
       y: {
         position: "left",
@@ -103,4 +103,4 @@ const Chart = ({ filterIndex }) => {
   return <Line options={options} data={data} className="chart" />;
 };
 
-export default Chart;
+export default memo(Chart);

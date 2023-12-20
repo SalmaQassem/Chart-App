@@ -1,4 +1,5 @@
 import styles from "../styles/_DatePicker.module.scss";
+import { memo } from "react";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
@@ -18,5 +19,4 @@ const DateTimePicker = ({ value, placeholder, onChange }) => {
     </LocalizationProvider>
   );
 };
-
-export default DateTimePicker;
+export default memo(DateTimePicker);

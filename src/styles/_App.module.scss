@@ -13,54 +13,10 @@
     $align: center,
     $gap: $gap-50
   );
-  overflow-x: auto;
-
-  .filterForm {
-    @include flex-variant(
-      flex,
-      $direction: row,
-      $align: center,
-      $gap: $gap-30,
-      $wrap: wrap
-    );
-    .inputs {
-      @include flex-variant(flex, $direction: row, $gap: $gap-30, $wrap: wrap);
-      .input {
-        height: 2rem;
-        width: 15rem;
-        padding: 0 $padding-10;
-        border-bottom: $border-1 solid $grey-3;
-        input {
-          height: 100% !important;
-          &::placeholder {
-            text-transform: capitalize;
-            color: $grey-3;
-          }
-        }
-        .icon {
-          font-size: $f-s-18;
-          color: $pink;
-        }
-      }
-    }
-    .filterBtn {
-      padding: $padding-6 $padding-10;
-      background-color: $pink;
-      font-size: $f-s-16;
-      text-transform: capitalize;
-      color: $white;
-      border-radius: $b-r-8;
-      box-shadow: $boxShadow-1;
-      cursor: pointer;
-    }
-  }
-
   .chart {
     width: 100%;
-    min-width: 31.25rem;
     height: 22.8125rem;
     padding: $padding-28 $padding-20;
-    margin: 0 auto;
     border-radius: $b-r-15;
     background-color: $white;
     box-shadow: $boxShadow-1;
